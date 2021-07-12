@@ -24,10 +24,10 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    f"**`! 𝗔𝗙𝗞 🐨\n Sedang Sibuk, Tunggu {ALIVE_NAME} Online Kembali`**",
-    f"**`! 𝗔𝗙𝗞 🐨\n Mohon Maaf {ALIVE_NAME} Sedang Sibuk\n Sedang Menjalankan Perintah Tuhan!!**",
-    f"**`! 𝗔𝗙𝗞 🐨\n {ALIVE_NAME} Sedang Melakukan Perintah Tuhan\n Tunggu {ALIVE_NAME} Online Kembali !!!!!`**",
-    f"**`! 𝗔𝗙𝗞 🐨\n Maaf {ALIVE_NAME} Sedang Sibuk!!`**",
+    f"**`! 𝗔𝗙𝗞 🐨\n Lagi Ngentot, Tunggu {ALIVE_NAME} Selesai`**",
+    f"**`! 𝗔𝗙𝗞 🐨\n Mohon Maaf {ALIVE_NAME} Sedang Ngentot Dulu\n Sedang Menjalankan Perintah Tuhan!!**",
+    f"**`! 𝗔𝗙𝗞 🐨\n {ALIVE_NAME} Sedang Melakukan Cocok Tanam\n Tunggu {ALIVE_NAME} Online Kembali !!!!!`**",
+    f"**`! 𝗔𝗙𝗞 🐨\n Maaf {ALIVE_NAME} Sedang Ngentot!!`**",
 ]
 
 
@@ -90,7 +90,7 @@ async def type_afk_is_not_true(notafk):
     global afk_end
     user = await bot.get_me()  # pylint:disable=E0602
     last = user.last_name
-    if last and last.endswith(" [ •𝗕𝗨𝗦𝗬• ]"):
+    if last and last.endswith(" [ •NGENTOT• ]"):
         last1 = last[:-12]
     else:
         last1 = ""
@@ -98,7 +98,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.respond(f"**`{ALIVE_NAME}` Kembali! Kangen Gak?....**")
+        msg = await notafk.respond(f"**`{ALIVE_NAME}` udah crot ! Kangen Gak?....**")
         time.sleep(3)
         await msg.delete()
         await notafk.client(UpdateProfileRequest(first_name=user.first_name, last_name=last1))
