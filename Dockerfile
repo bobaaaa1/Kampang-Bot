@@ -3,7 +3,7 @@ FROM koala21/kampangbot:buster
 # Perkontolan eh maaf kasar
 # Koala/@manusiarakitan
 #
-RUN git clone -b Kampang https://github.com/bobaaa1/Kampang-Bot /root/userbot
+RUN git clone -b Kampang https://github.com/bobaaaa1/Kampang-Bot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
