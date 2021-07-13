@@ -2978,6 +2978,7 @@ async def _(event):
         await event.edit("".join(deq))
         deq.rotate(1)
 
+
 @register(outgoing=True, pattern="^.marsha(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
