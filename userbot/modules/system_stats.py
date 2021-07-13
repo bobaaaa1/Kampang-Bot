@@ -165,7 +165,7 @@ async def bot_ver(event):
 
         await event.edit(
             "`╭►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╮\n "
-            "` Bot-Kampang🐨 Version: \n "
+            "` Bot-marsha🐨 Version: \n "
             f"{verout}"
             "` \n"
             "   Revision: "
@@ -242,7 +242,7 @@ async def amireallyalive(alive):
         f"•➣ 🌐 **Vҽɾʂι Kαɱραɳɠ**:    `{BOT_VER}` \n"
         f"•➣ 🗃️ **Mσԃυʅҽ**       :       `{len(modules)}` \n\n"
         f"**┏▼━━━━━━━━━━━━━━━━━▼┓**\n"
-        f"    🎉 **𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐃.   :** [BOT KAMPANG](https://github.com/ManusiaRakitan/Kampang-Bot)\n"
+        f"    🎉 **𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐃.   :** [BOT marsha](https://github.com/bobaaaa1/Kampang-Bot)\n"
         f"   🐨 **Grup Official.: ** [Pencet Asu](https://t.me/caritemanhidop)\n"
         f"    ☬ **ѕυρρσят ву.   :** [KOALA 🐨](https://t.me/manusiarakitann)\n"
         f"┗▲━━━━━━━━━━━━━━━━━▲┛")
