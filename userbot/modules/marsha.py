@@ -43,6 +43,7 @@ async def honkasays(event):
 CMD_HELP.update({"prog": "`.prg`\
     \nPenjelasan: .prg <kata kata>. Biar bisa lihat kodok bentuk badut"})
 
+
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
@@ -80,5 +81,5 @@ async def _(event):
             "(7) 𝐬𝐞𝐭𝐢𝐚 : ✅",
             "(8) 𝐤𝐚𝐥𝐚𝐮 𝐦𝐚𝐮 𝐤𝐞𝐧𝐚𝐥 𝐏𝐂 𝐚𝐣𝐚 : ☑️",
             "(8) 𝐤𝐚𝐥𝐚𝐮 𝐦𝐚𝐮 𝐤𝐞𝐧𝐚𝐥 𝐏𝐂 𝐚𝐣𝐚 : ✅",
-CMD_HELP.update({"marsa: ".marsa\
+CMD_HELP.update({"marsa: ".marsa
     \nPenjelasan: .marsa . Biar bisa lihat biodata singkat marsha"})
