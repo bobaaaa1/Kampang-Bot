@@ -2979,15 +2979,54 @@ async def _(event):
         deq.rotate(1)
 
 
-@register(outgoing=True, pattern="^.marsha(?: |$)(.*)")
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
+
     if event.fwd_from:
+
         return
-    deq = deque(list("🥺🥺🥺🥺🥺🥺🥺🥺🥺"))
-    for _ in range(48):
-        await asyncio.sleep(0.1)
-        await event.edit("".join(deq))
-        deq.rotate(1)
+
+    animation_interval = 1
+
+    animation_ttl = range(0, 20)
+
+    input_str = event.pattern_match.group(1)
+
+    if input_str == "marsa":
+
+        await event.edit(input_str)
+
+        animation_chars =  [
+
+            "𝐏𝐞𝐫𝐤𝐞𝐧𝐚𝐥𝐤𝐚𝐧 𝐬𝐚𝐲𝐚 𝐌𝐚𝐫𝐬𝐡𝐚...",
+            "𝐒𝐞𝐤𝐢𝐥𝐚𝐬 𝐢𝐧𝐟𝐨 𝐭𝐞𝐧𝐭𝐚𝐧𝐠 𝐦𝐚𝐫𝐬𝐡𝐚...",
+            "(1) 𝐨𝐫𝐚𝐧𝐠 𝐭𝐚𝐬𝐢𝐤𝐦𝐚𝐥𝐚𝐲𝐚: ☑️",
+            "(1)𝐨𝐫𝐚𝐧𝐠 𝐭𝐚𝐬𝐢𝐤𝐦𝐚𝐥𝐚𝐲𝐚: ✅",
+            "(2) 𝐠𝐚𝐤 𝐠𝐨𝐨𝐝 𝐥𝐨𝐨𝐤𝐢𝐧𝐠: ",
+            "(2) 𝐠𝐚𝐤 𝐠𝐨𝐨𝐝 𝐥𝐨𝐨𝐤𝐢𝐧𝐠: ✅",
+            "(3) 𝐠𝐚𝐤 𝐤𝐚𝐲𝐚: ",
+            "(3) 𝐠𝐚𝐤 𝐤𝐚𝐲𝐚 :",
+            "(4) 𝐨𝐫𝐚𝐧𝐠 𝐧𝐲 𝐛𝐚𝐢𝐤: ☑️",
+            "(4) 𝐨𝐫𝐚𝐧𝐠 𝐧𝐲 𝐛𝐚𝐢𝐤: ✅",
+            "(5) 𝐠𝐚𝐤 SANGEAN: ☑️",
+            "(5) 𝐠𝐚𝐤 SANGEAN: ✅",
+            "(6) 𝐡𝐮𝐦𝐨𝐫𝐢𝐬: ",
+            "(6) 𝐡𝐮𝐦𝐨𝐫𝐢𝐬: ✅",
+            "(7) 𝐬𝐞𝐭𝐢𝐚 : ☑️",
+            "(7) 𝐬𝐞𝐭𝐢𝐚 : ✅",
+            "(8) 𝐤𝐚𝐥𝐚𝐮 𝐦𝐚𝐮 𝐤𝐞𝐧𝐚𝐥 𝐏𝐂 𝐚𝐣𝐚 : ☑️",
+            "(8) 𝐤𝐚𝐥𝐚𝐮 𝐦𝐚𝐮 𝐤𝐞𝐧𝐚𝐥 𝐏𝐂 𝐚𝐣𝐚 : ✅",
+     
+            
+   
+
+        ]
+
+        for i in animation_ttl:
+
+            await asyncio.sleep(animation_interval)
+
+            await event.edit(animation_chars[i % 20])
 CMD_HELP.update({
     "remixmemes":
     "`.eye`\
@@ -3050,6 +3089,8 @@ CMD_HELP.update({
 \nUsage: Virus found ...Remove it using this 😂😂.\
 \n\n`.plane`\
 \nUsage: For travelling from one place to another ✈️✈️\
+\n\n`.marsa`\
+\nUsage: ntah 🤣🤣\
 \n\n`.jio`\
 \nUsage: Your network slow?? Boost it using this 🤣🤣\
 \n\n\nWARNING⚠️⚠️: All this cmds will spam group recents.\nUse it in OT groups/Spam groups OR GET YOU A** KICKED😂😂."
