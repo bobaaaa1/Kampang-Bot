@@ -41,4 +41,4 @@ async def honkasays(event):
 
 
 CMD_HELP.update({"prog": "`.prg`\
-    \nPenjelasan: .prg <kata kata>. Biar bisa lihat kodok bentuk badut"}) 
+    \nPenjelasan: .prg <kata kata>. Biar bisa lihat kodok bentuk badut"})
