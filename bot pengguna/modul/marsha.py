@@ -43,6 +43,7 @@ async def honkasays(event):
 CMD_HELP.update({"prog": "`.prg`\
     \nPenjelasan: .prg <kata kata>. Biar bisa lihat kodok bentuk badut"})
 
+
 @register(outgoing=True, pattern="^.marsha$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
