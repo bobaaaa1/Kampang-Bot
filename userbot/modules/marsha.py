@@ -42,19 +42,3 @@ async def honkasays(event):
 
 CMD_HELP.update({"prog": "`.prg`\
     \nPenjelasan: .prg <kata kata>. Biar bisa lihat kodok bentuk badut"})
-
-
-@register(outgoing=True, pattern="^.marsha$")
-async def koc(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit(" Hai Ka saya marsha🥺")
-        await e.edit("orang tasikmalaya🥺")
-        await e.edit("gak ganteng gak kaya🥺")
-        await e.edit("tapi sangat setia🥺")
-        await e.edit("Cita-cita pengen hidup poya poya🥺")
-        await e.edit("punya istri lima🥺")
-        await e.edit("cantik semua🥺")
-        await e.edit("paham agama🥺")
-        await e.edit(" Kalau kaka mau PC aja ya🥺")
-CMD_HELP.update({"siapa": "`.siapa`\
-    \nPenjelasan: .siapa. Biar bisa lihat siapa marsha"})
