@@ -231,7 +231,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**┣•{@codplanetmars}•┫\n"
+        f"**┣•{https://t.me/codplanetmars}•┫\n"
         f"   **╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
         f"         **☬ 𝐁𝐎𝐓 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 ☬** \n\n"
         f"   **╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
