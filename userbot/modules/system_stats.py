@@ -165,7 +165,7 @@ async def bot_ver(event):
 
         await event.edit(
             "`╭►▻►▻►▻►▻►▻►◄◅◄◅◄◅◄◅◄◅╮\n "
-            "` Bot-marsha🐨 Version: \n "
+            "` Bot-marsha🥺 Version: \n "
             f"{verout}"
             "` \n"
             "   Revision: "
@@ -231,7 +231,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**┣•{KAMPANG_TEKS_KUSTOM}•┫\n"
+        f"**┣•{https://t.me/codplanetmars}•┫\n"
         f"   **╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
         f"         **☬ 𝐁𝐎𝐓 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 ☬** \n\n"
         f"   **╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
@@ -244,7 +244,7 @@ async def amireallyalive(alive):
         f"**┏▼━━━━━━━━━━━━━━━━━▼┓**\n"
         f"    🎉 **𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐃.   :** [BOT marsha](https://github.com/bobaaaa1/Kampang-Bot)\n"
         f"   🐨 **Grup Official.: ** [Pencet Asu](https://t.me/codplanetmars)\n"
-        f"    ☬ **ѕυρρσят ву.   :** [KOALA 🐨](https://t.me/marshakucingbot)\n"
+        f"    ☬ **ѕυρρσят ву.   :** [marsha ](https://t.me/marshakucingbot)\n"
         f"┗▲━━━━━━━━━━━━━━━━━▲┛")
 
     if ALIVE_LOGO:
