@@ -243,8 +243,8 @@ async def amireallyalive(alive):
         f"•➣ 🗃️ **Mσԃυʅҽ**       :       `{len(modules)}` \n\n"
         f"**┏▼━━━━━━━━━━━━━━━━━▼┓**\n"
         f"    🎉 **𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐃.   :** [BOT marsha](https://github.com/bobaaaa1/Kampang-Bot)\n"
-        f"   🐨 **Grup Official.: ** [Pencet Asu](https://t.me/caritemanhidop)\n"
-        f"    ☬ **ѕυρρσят ву.   :** [KOALA 🐨](https://t.me/manusiarakitann)\n"
+        f"   🐨 **Grup Official.: ** [Pencet Asu](https://t.me/codplanetmars)\n"
+        f"    ☬ **ѕυρρσят ву.   :** [KOALA 🐨](https://t.me/marshakucingbot)\n"
         f"┗▲━━━━━━━━━━━━━━━━━▲┛")
 
     if ALIVE_LOGO:
